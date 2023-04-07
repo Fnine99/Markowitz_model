@@ -4,13 +4,17 @@ This model is made for learning puposes only and should not be used for investme
 ### An application of the Markowitz efficient frontier model and the Modern Portfolio Theory
 In this project I implement the almost complete automation of the portfolio optimization and risk using the Markowitz model.
 
-## Usage:
-    mkdir <Folder name>
+## Requirements:
+python3 and pip correctly installed
 
-    cd <Folder name>
+## Usage:
 
     git clone https://github.com/Fnine99/Markowitz_mpt
     
+    cd Markowitz_mpt
+
+    pip install requests pandas matplotlib numpy scipy
+
     python3 main.py
 
 
