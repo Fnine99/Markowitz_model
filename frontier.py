@@ -29,12 +29,7 @@ class Frontier(Optimize):
         for counter, symbol in enumerate(list(self.portfolio.arith_mean_returns.keys())):
             portfolios_data[symbol+' weight'] = [w[counter] for w in self.portfolios_weights]
         
-        return portfolios_data
-    
-    def visualise_generated_portfolios(self):
-        self.portfolios = self.generate_portfolios()
-        
-        self.portfolios = pd.DataFrame(self.portfolios)
+        self.portfolios = pd.DataFrame(portfolios_data)
 
         self.portfolios.plot.scatter(x='Volatility', y='Returns', marker='o', s=10, alpha=0.3, grid=True, figsize=[10,8])
 
@@ -43,7 +38,9 @@ class Frontier(Optimize):
         
         self.optimized_min_vol_port = self.minimize_volatility()
         self.optimized_optimal_risky_port = self.optimal_portfolio()
-
+    
+    def visualise_generated_portfolios(self):
+        self.generate_portfolios()
         plt.scatter(self.optimized_min_vol_port[1], self.optimized_min_vol_port[0], color='g', marker='o', s=15, label="Optimized minimum volatility portfolio")
         plt.scatter(self.optimized_optimal_risky_port[1], self.optimized_optimal_risky_port[0], color='g', marker='+', s=20, label="Optimized maximum Sharpe ratio portfolio")
         plt.scatter(self.min_vol_port[1], self.min_vol_port[0], color='r', marker='o', s=15, label="Located minimum volatility portfolio")
