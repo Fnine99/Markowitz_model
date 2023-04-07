@@ -11,7 +11,7 @@ In this project I implement the almost complete automation of the portfolio opti
 
     git clone https://github.com/Fnine99/Markowitz_mpt
     
-    python app/main.py
+    python3 main.py
 
 
 ## Content description:
