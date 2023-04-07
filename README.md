@@ -13,7 +13,7 @@ python3 and pip correctly installed
     
     cd Markowitz_mpt
 
-    pip install requests pandas matplotlib numpy scipy
+    pip install -r requirements.txt
 
     python3 main.py
 
