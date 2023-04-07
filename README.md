@@ -22,7 +22,7 @@ python3 and pip correctly installed
 
 Step 1) 5 years monthly price time series data fetching on the <a href="https://twelvedata.com">Twelve Data API</a>
 
-see <a href="https://github.com/Fnine99/markowitz_eff_frontier-pmgmt/blob/main/app/data.py">app/data.py</a>
+see <a href="https://github.com/Fnine99/Markowitz_mpt/data.py">data.py</a>
 
 Step 2) Various methods on each assets including:<br/>
 -Monthly prices<br/>
@@ -31,7 +31,7 @@ Step 2) Various methods on each assets including:<br/>
 -Geometric mean return<br/>
 -Monthly returns standard deviation<br/>
 
-see <a href="https://github.com/Fnine99/markowitz_eff_frontier-pmgmt/blob/main/app/assets.py">app/assets.py</a>
+see <a href="https://github.com/Fnine99/Markowitz_mpt/assets.py">assets.py</a>
 
 Step 3) Portfolio construction and Various portfolio methods including:<br/>
 -Portfolio return<br/>
@@ -41,7 +41,7 @@ Step 3) Portfolio construction and Various portfolio methods including:<br/>
 -Portfolio correlation matrix<br/>
 -Portfolio inverse covariance matrix<br/>
 
-see <a href="https://github.com/Fnine99/markowitz_eff_frontier-pmgmt/blob/main/app/portfolio.py">app/portfolio.py</a>
+see <a href="https://github.com/Fnine99/Markowitz_mpt/portfolio.py">portfolio.py</a>
 
 Step 4) Portfolio optimization with <a href="https://docs.scipy.org/doc/scipy/tutorial/optimize.html">Scipy algorithms</a> including finding the assets weights which:<br/>
 -Minimize the portfolio return<br/>
@@ -50,7 +50,7 @@ Step 4) Portfolio optimization with <a href="https://docs.scipy.org/doc/scipy/tu
 -Maximize the portfolio variance<br/>
 -Maximize the portfolio Sharpe ratio<br/>
 
-see <a href="https://github.com/Fnine99/markowitz_eff_frontier-pmgmt/blob/main/app/optimize.py">app/optimize.py</a>
+see <a href="https://github.com/Fnine99/Markowitz_mpt/optimize.py">optimize.py</a>
 
 Step 5) Efficient frontier construction and portfolios modelling including:<br/>
 -Generate X amout of (1M) of portfolios<br/>
@@ -59,7 +59,7 @@ Step 5) Efficient frontier construction and portfolios modelling including:<br/>
     >Maximize the portfolio Sharpe ratio<br/>
 -Plot step 4 and 5<br/>
 
-see <a href="https://github.com/Fnine99/markowitz_eff_frontier-pmgmt/blob/main/app/frontier.py">app/frontier.py</a>
+see <a href="https://github.com/Fnine99/Markowitz_mpt/frontier.py">frontier.py</a>
 
 # Results Example
 
