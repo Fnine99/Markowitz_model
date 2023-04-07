@@ -53,7 +53,7 @@ Step 4) Portfolio optimization with <a href="https://docs.scipy.org/doc/scipy/tu
 see <a href="https://github.com/Fnine99/Markowitz_mpt/optimize.py">optimize.py</a>
 
 Step 5) Efficient frontier construction and portfolios modelling including:<br/>
--Generate X amout of (1M) of portfolios<br/>
+-Generate X number(1M) of portfolios<br/>
 -From those generated portfolios locate the assets weights which:<br/>
     >Minimize the portfolio variance<br/>
     >Maximize the portfolio Sharpe ratio<br/>
