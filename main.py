@@ -1,3 +1,13 @@
+import subprocess
+
+packages = ['requests', 'json', 'pandas', 'matplotlib', 'numpy', 'scipy']
+
+for package in packages:
+    try:
+        subprocess.check_call(['pip', 'install', package])
+    except subprocess.CalledProcessError:
+        print(f"Failed to install {package}")
+
 from data import fetch
 from frontier import Frontier
 from portfolio import Portfolio
